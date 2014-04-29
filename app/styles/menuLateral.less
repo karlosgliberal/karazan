@@ -1,0 +1,178 @@
+@defaultRadius:80px;
+@defaultHeight:31px;
+@defaultWidth:31px;
+@defaultMargenCirculo: 5px; 
+
+// Menu lateral
+.lateral {
+  height: 720px;
+  position: fixed;
+  right: 0;
+  width: 270px;
+  margin: 1px 25px 0 0;
+  background: url("../images/menu-lateral.png") no-repeat 0% -6%;
+}
+// Media menu lateral
+@media (max-width: 980px) { 
+  .lateral {
+    display: none;
+  }
+}
+
+.RoundedShape(@radius:@defaultRadius){
+    -webkit-border-radius:@radius;
+       -moz-border-radius:@radius;
+            border-radius:@radius;  
+}
+
+.Circulos(@height:@defaultHeight, @width:@defaultWidth, @margeCirculo:@defaultMargenCirculo){
+  background: fade(@white, 50%);
+  height: @height;
+  width: @width;
+  .RoundedShape(@defaultRadius);
+  box-shadow: 
+    inset 0 0 0 @margeCirculo rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0);
+   -webkit-transform: scale(1);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+
+.circulo-efecto{
+  height: 31px;
+  width: 31px;
+  .RoundedShape(@defaultRadius);
+  -webkit-transition: all 0.9s ease-in-out;
+  -webkit-transform: scale(1.2); 
+  background: fadein(@red, 80%);
+  border: 1px solid rgba(255,255,255,100%);
+}
+
+.circulo-efecto-peque{
+  height: 21px;
+  width: 21px;
+  .RoundedShape(@defaultRadius);
+  -webkit-transition: all 0.9s ease-in-out;
+  -webkit-transform: scale(1.2); 
+  background: fadein(@red, 80%);
+  border: 1px solid rgba(255,255,255,100%);
+}
+
+//inset 0 0 35px 35px transparent, 0 0 75px 50px transparent
+.circulo{
+  .Circulos();
+}
+
+.circulo-peque{
+  .Circulos(21px, 21px, 4px);
+}
+
+.carta-item {
+  position: absolute;
+  top: 128px;
+  left:51px;
+}
+
+.logros-item {
+  position: absolute;
+  top: 189px;
+  left:86px;
+}
+
+.valor-item {
+  position: absolute;
+  top: 272px;
+  left:89px;
+}
+
+.indicadores-item {
+  position: absolute;
+  top: 682px;
+  left:61px;
+}
+
+.consejo-item {
+  position: absolute;
+  top: 350px;
+  left:100px;
+}
+
+.luz-item {
+  position: absolute;
+  top: 410px;
+  left:118px;
+}
+
+.formacion-item {
+  position: absolute;
+  top: 473px;
+  left:105px;
+}
+
+.emprendedores-item {
+  position: absolute;
+  top: 537px;
+  left:35px;
+}
+
+.limpia-item {
+  position: absolute;
+  top: 609px;
+  left:65px;
+}
+
+.opacidad{
+  opacity:0.2;
+}
+
+.lateral-texto{
+  position: relative;
+  top: -42px;
+  left: 40px;
+}
+
+.margen-texto{
+  position: relative;
+  left: 55px;
+}
+
+.lateral-texto-izq{
+  position: relative;
+  top: -40px;
+  left: -128px;
+  text-align: right;
+}
+
+.punto{
+}
+
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  background: rgba(0,0,0,0.3);
+  color: #f7f7f7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: background 200ms linear;
+  -moz-transition: background 200ms linear;
+  transition: background 200ms linear;
+  -webkit-backface-visibility: hidden;
+  line-height: 1;
+  font-size: 20px;
+  padding: 9px 10px 10px 10px;
+}
+
+#scrollUp:hover {
+  background: rgba(0,0,0,0.5);
+}
+
+
+
+
+.lateral-texto {
+font-family: @proxima;
+
+}
+
+
+

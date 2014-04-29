@@ -1,0 +1,683 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "menuLateral.less";
+@icon-font-path: "../bower_components/bootstrap/dist/fonts/";
+
+
+// Colores
+@red: #E60F1F;
+@red-dark: #DD1616;
+@green: #66B017;
+@white: #ffffff;
+@black: #000;
+@gray: #ccc;
+
+
+
+// Tipografías
+@proxima: "proxima-nova",sans-serif ;
+@myriad: "myriad-pro",sans-serif ;
+
+
+//Radio por defecto 
+@defaultmiradio: 9999px;
+
+
+// Elementos generales
+
+a {
+  .transicion;
+  color:@white;
+}
+
+a:hover, a:active {
+	opacity: 0.7;
+	color: @white;
+	text-decoration: none;
+}
+
+.ita {
+	font-style: italic;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.white {
+	color:@white;
+}
+.green{
+	color:@green;
+}
+
+p.red{
+	color:@red;
+}
+
+.red {
+	color:@red;
+}
+
+.bck-green {
+	background-color: @green;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+.bck-white {
+	background-color: @white;
+}
+.center {
+	text-align: center;
+}
+
+.inner-top {
+	padding: 200px 0;
+}
+
+.inner {
+	padding: 150px 0;
+}
+.inner-seccion {
+	padding: 200px 0;
+}
+
+
+.round {
+ .round-square();
+}
+
+.round-square(@miradio:@defaultmiradio){
+    -webkit-border-radius:@miradio;
+       -moz-border-radius:@miradio;
+            border-radius:@miradio;  
+}
+
+.transicion {
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.border-white {
+    border-top: 1px solid #fff;
+}
+.icono-wrapper {
+	background-color: @red;
+}
+
+.texto-box-wrapper {
+	background-color: @black;
+	width: 88%;
+	padding: 7px 0px 0px 10px;
+}
+.icono-wrapper {
+	background-color: @red;
+	width: 12%;
+	padding: 12px 0px 5px 13px;
+}
+
+// Margins y paddings
+
+.m0 {
+	margin: 0;
+}
+
+.mt5 {
+	margin-top: 5px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mb10 {
+	margin-bottom: 10px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+.mt30 {
+	margin-top: 30px;
+}
+.mb30 {
+	margin-bottom: 30px;
+}
+
+.mt40 {
+	margin-top: 40px;
+}
+
+.mb40 {
+	margin-bottom: 40px;
+}
+
+.mt50 {
+	margin-top: 50px;
+}
+.mb50 {
+	margin-bottom: 50px;
+}
+
+.mt60 {
+	margin-top: 60px;
+}
+
+.ml40 {
+    margin-left: 66px;
+	margin-top: -2px;
+}
+
+.ml90 {
+	margin-left: 90px;
+	margin-top: -2px;
+}
+
+.ml188 {
+	margin-left: 188px;
+	margin-top: -2px;
+}
+
+.ml64 {
+	margin-left: 57px;
+	margin-top: -2px;
+}
+
+.mr30 {
+margin-right: 30px;
+}
+
+
+.pt10 {
+	padding-top: 10px;
+}
+
+.pt20 {
+	padding-top: 20px;
+}
+
+.pt30 {
+	padding-top: 30px;
+}
+
+.divide60 {
+    width: 100%;
+    height: 75px;
+}
+
+.divide75 {
+    width: 100%;
+    height: 75px;
+}
+.divide80 {
+    width: 100%;
+    height: 80px;
+}
+.divide85 {
+    width: 100%;
+    height: 85px;
+}
+
+// Headings
+
+h2 {
+	font-family: @proxima;
+	font-size: 70px;
+	color: @white;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: @myriad;
+	background-color: @red;
+	color: @white;
+	padding: 3px 10px;
+	text-align: right;
+	font-size: 22px;
+}
+
+.titular-up{
+	font-family: @myriad;
+	font-weight: 200;
+}
+
+
+// Menu
+
+.nav > li > a:hover, .nav > li > a:focus {
+	background: transparent;
+	opacity: 1;
+}
+
+.menu-item {
+font-family: @proxima;
+color: @white;
+text-align: center;
+padding: 30px 17px;
+
+}
+
+.item-down {
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.nav li a {
+	padding: 0;
+	opacity: 0.6;
+}
+
+.menu-wrapper {
+	background-color: @red;
+	
+}
+
+.navbar-header-alicorp {
+	background-color: @red;
+	margin: 0 6%;
+}
+
+.navbar-nav {
+background-color: @red;
+}
+
+.icon-bar {
+	background-color: @black;
+}
+
+.navbar-brand {
+    background-color: @red;
+    padding: 23px;
+}
+
+.logo-wrapper {
+	float: left;
+	background-color: @red;
+	padding: 2% 0% 0%;
+    margin-left: 1%;
+}
+
+.navbar .container {
+    padding: 0;
+}
+
+
+a li {
+  .transicion;
+  color:@white;
+}
+
+
+.menu-item ul.nav a li {
+	opacity: 0.7;
+}
+
+.menu-item ul.nav a:hover li, .menu-item ul.nav a:active li {
+	opacity: 1;
+	text-decoration: none;
+}
+
+@media (max-width: 991px) { 
+	.menu-item {
+     padding: 0 9px;
+     margin-top: 9px;
+
+	}
+
+	.item-down {
+		font-size: 12px;
+	}
+	.item-up {
+		font-size: 11px;
+	}
+
+	.logo-wrapper img {
+		width: 60%;
+	}
+
+	.logo-wrapper {
+	   padding: 1% 0% 0%;
+	}
+	.navbar {
+		background-color: @red;
+	}
+}
+
+
+
+// Secciones
+
+.seccion {
+	background-size: cover;
+	background-position: 50% 50%;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+}
+
+.inicial {
+	background-image: url("../images/uno.jpg");
+}
+
+.gerente {
+	background-image: url("../images/dos.jpg");
+}
+
+.logros {
+	background-image: url("../images/tres.jpg");
+}
+
+.valor {
+	background-image: url("../images/cuatro.jpg");
+}
+
+.radio-saludable {
+	background-image: url("../images/cinco.jpg");
+}
+.radio-saludable-uno {
+	background-image: url("../images/seis.jpg");
+}
+
+.radio-saludable-dos {
+	background-image: url("../images/siete.jpg");
+}
+
+.proyecto-bdp {
+	background-image: url("../images/ocho.jpg");
+}
+
+.proyecto-bdp-uno {
+	background-image: url("../images/nueve.jpg");
+}
+.blanco-rojo {
+	background-image: url("../images/diez.jpg");
+}
+
+.brigada-emprededores {
+	background-image: url("../images/once.jpg");
+}
+
+.brigada-emprendedores-uno {
+   background-image: url("../images/doce.jpg");
+}
+
+.planta-efluente {
+	background-image: url("../images/trece.jpg");
+}
+
+.indicadores {
+	background-image: url("../images/catorce.jpg");
+}
+
+
+// Estilos generales
+
+.img-cien {
+	max-width: 100%;
+}
+
+.texto-wrapper {
+	background: fade(@black, 50%);
+	padding: 30px 20px;
+}
+.texto-home {
+ 	font-family: @proxima;
+	font-size: 19px;
+ 	font-weight: 500;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.texto-gerente-wrapper {
+background-color: @white;
+padding: 30px 20px;
+}
+
+.texto-box
+{
+color: @black;
+font-family: @myriad;
+}
+
+.destacado-gerente {
+	font-family: @proxima;
+	color: @white;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+.titular-wrapper-black {
+	border-top: 1px solid @black;
+}
+
+.titular-wrapper-white {
+	border-top: 1px solid @white;
+}
+
+.border-black{
+	border-top: 1px solid @black;
+}
+.valor-titular {
+	font-size: 23px;
+	text-align: left;
+	border-top: 1px solid #fff;
+}
+
+.box-black {
+	background-color: @black;
+	font-family: @proxima;
+	font-weight: bold;
+	font-size: 18px;
+	font-style: italic;
+	margin-top: 3px;
+}
+.destacado-seccion {
+	font-family: @proxima;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 32px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.icon-descarga {
+	font-size: 40px;
+}
+
+.gri-wrapper {
+width: 65%;
+padding: 28px;
+margin: 0 auto;
+ 	.round-square(7px);
+}
+
+.texto-footer {
+	margin: 50px 0px;
+	color: @green;
+	font-family:@myriad;
+	font-size: 20px; 
+}
+
+.texto-footer a {
+color: @green;
+text-decoration: none;
+} 
+
+// Circulos
+.numero-high {
+font-family: @proxima;
+font-weight: bold;
+font-size: 90px;
+margin:0;
+line-height: 0.8;
+}
+
+.numero-mediun {
+font-family: @proxima;
+font-weight: bold;
+font-size: 60px;
+margin: 0;
+line-height: 0.8;
+}
+
+.numero-small {
+font-family: @proxima;
+font-weight: bold;
+font-size: 30px;
+margin: 0;
+line-height: 0.8;
+}
+
+.circle-mediun {
+	.round;
+	width: 150px;
+	height: 150px;
+	.circle-box {
+		padding: 30px 15px;
+	}	
+}
+
+.circle-large {
+	.round;
+	width: 225px;
+	height: 225px;
+	.circle-box {
+		padding: 40px 15px;
+	}	
+
+}
+
+.circle-extra-large {
+	.round;
+	width: 240px;
+	height: 240px;
+	.circle-box {
+		padding: 40px 25px;
+	}	
+}
+
+
+.circle-small {
+	.round;
+	width: 90px;
+	height: 90px;
+	.circle-box {
+		padding: 17px 15px;
+	}	
+}
+
+
+.t-verde {
+	background: fade(@green, 80%);
+}
+
+.t-white {
+	background: fade(@white, 80%);
+}
+
+.texto-circulo {
+	font-family: @myriad;
+	font-weight: 200;
+		&.large {
+			font-size: 18px;
+		}
+		&.mediun {
+			font-size: 13px;
+		}
+		&.small {
+			font-size: 10px;
+		}
+}
+
+.c-wrapper {
+	height: 500px;
+}
+
+.c1 {
+   left: 13px;
+    position: absolute;
+    top: 185px;
+}
+
+.c2 {
+   left: 132px;
+    position: absolute;
+    top: 13px;
+}
+
+.c3 {
+    left: 237px;
+    position: absolute;
+    top: 104px;
+}
+
+
+.c4 {
+position: absolute;
+top: 0px;
+left: 100px;
+}
+
+.c5 {
+    left: 4px;
+    position: absolute;
+    top: 209px;
+}
+
+.c6 {
+    left: 228px;
+    position: absolute;
+    top: 60px;
+}
+
+.c7 {
+left: 0px;
+position: absolute;
+top: 275px;
+}
+
+.c9 {
+    left: 214px;
+    position: absolute;
+    top: 110px;
+}
+
+.c10 {
+    left: 230px;
+    position: absolute;
+    top: 247px;
+}
+
+// Media menu
+@media (max-width: 768px) { 
+.navbar-header-alicorp {
+margin: 0 0%;
+}
+
+.logo-wrapper {
+ float: none; 
+ padding: 5px 3px;
+ background-color: @red-dark;
+}
+
+.logo-wrapper img {
+width: 35%;
+}
+
+.item-up {
+font-size: 12px;
+text-align: left;
+}
+
+.item-down {
+font-size: 14px;
+text-align: left;
+}
+}
+
+
