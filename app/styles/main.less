@@ -13,9 +13,11 @@
 @black:#303231;
 @white:#fff;
 @gray:#d6d6d6;
+@gray_dark: #8f8f8f;
 
 // Tipografías
 @open: "Open Sans", sans-serif;
+@open_con: "Open Sans Condensed", sans-serif;
 
 //Generales
 body {
@@ -30,7 +32,7 @@ body {
 }
 
 .inner-45 {
-	padding: 45px 15px;
+	padding: 45px 15px !important;
 }
 .inner-65 {
 	padding: 65px 15px;
@@ -284,9 +286,12 @@ font-size: 60px;
 }
 
 .item-bestaker {
-	font-family: @open;
+	font-family: @open_con;
 	font-size: 18px;
 	font-weight: bold;
     letter-spacing: 0px;
 }
 
+.texto-con-bestaker {
+	color: @gray_dark;
+}
