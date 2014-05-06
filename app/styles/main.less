@@ -220,6 +220,29 @@ background-color: @white;
 }
 
 // Titulares
+
+//Lineas subtitulo
+.wrapper-line {
+	border-bottom: 1px solid @gray;
+	height: 6px;
+}
+
+.line {
+	width: 9%;
+	height: 6px;
+	float: left;
+}
+
+.line-blue {
+	background-color: @blue;
+	margin-right: : 41%;	
+}
+
+.line-black {
+	background-color: @black;	
+	margin-left: 41%;
+}
+
 .slide-big {
 text-transform: uppercase;
 color: @white;
@@ -264,27 +287,35 @@ font-size: 60px;
 	color: @blue;
 }
 
-.wrapper-line {
-	border-bottom: 1px solid @gray;
-	height: 6px;
+.titular-inversor {
+	font-family: @open_con;
+	color: @black;
+	font-size: 25px;
+	font-weight: bold;
+	margin: 0;
 }
 
-.line {
-	width: 9%;
-	height: 6px;
-	float: left;
+.destacado-inversor {
+font-family: @open_con;
+font-weight: bold;
+color: fade(@black, 75%);
+
 }
 
-.line-blue {
+//Colores
+.blue {
+	color: @blue;
+}
+
+.bg-blue {
 	background-color: @blue;
-	margin-right: : 41%;	
 }
 
-.line-black {
-	background-color: @black;	
-	margin-left: 41%;
+.white {
+	color: @white;
 }
 
+// General
 .item-bestaker {
 	font-family: @open_con;
 	font-size: 18px;
@@ -295,3 +326,46 @@ font-size: 60px;
 .texto-con-bestaker {
 	color: @gray_dark;
 }
+
+.icon-wrapper-inversor {
+	font-size: 32px;
+	width: 65px;
+	height: 65px;
+	padding: 15px;
+}
+
+.ico-inversor {
+	margin-right: 15px;
+	color: @blue;
+}
+
+ul.items-inversor li:before {
+ content: "\e013";
+ position: relative;
+ top: 1px;
+ display: inline-block;
+ font-family: 'Glyphicons Halflings';
+ font-style: normal;
+ font-weight: normal;
+ line-height: 1;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ color: @blue;
+ margin-right: 15px;
+}
+
+ul.items-inversor {
+list-style: none;
+padding-left: 0;
+}
+
+.wrapper-inversor-texto {
+	padding: 0 15px;
+}
+
+
+
+
+
+
+
