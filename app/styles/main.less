@@ -32,7 +32,7 @@ body {
 }
 
 .inner-45 {
-	padding: 45px 15px !important;
+	padding: 45px 0px !important;
 }
 .inner-65 {
 	padding: 65px 15px;
@@ -363,9 +363,40 @@ padding-left: 0;
 	padding: 0 15px;
 }
 
+.para-inversor {
+	background-image: url("../images/textura.png");
+}
+
+// EJEMPLO
+
+.row-fluid div {
+    height: 400px;
+    -webkit-transition: width 0.3s ease, margin 0.3s ease;
+    -moz-transition: width 0.3s ease, margin 0.3s ease;
+    -o-transition: width 0.3s ease, margin 0.3s ease;
+    transition: width 0.3s ease, margin 0.3s ease;
+}
+
+.row-fluid .span0 {
+    width: 0%;
+}
+
+#col1 {
+    background-color: purple;
+}
 
 
+#col2 {
+    background-color: @blue;
+}
 
+#trig {
+    margin: 50px;
+}
 
+.row-fluid .span0 + [class*="span"]{
+    margin-left: 0;
+}
 
+// FIN EJEMPLO
 

@@ -216,7 +216,27 @@
 </div>
 <!-- Fin para ti inversor -->
 
+<div class="ejemplo">
+  <div class="row">
+    <div class="col-md-12">
+      
+    </div>
+  </div>
+</div>
   
+
+<!-- Empieza ejemplo cut and paste -->
+      <div class="container">
+       <div class="row-fluid">
+        <div id="col2" class="span0"></div>
+         <div id="col1" class="col-md-12">
+         <a id="trig" class="btn btn-inverse">Reflow Me</a>
+        </div>
+      </div>
+      </div>
+<!-- Fin ejemplo cut and paste  -->
+
+
 <footer class="">
 
 </footer>
@@ -255,6 +275,12 @@
         <script src="bower_components/bootstrap/js/scrollspy.js"></script>
         <script src="bower_components/bootstrap/js/collapse.js"></script>
         <script src="bower_components/bootstrap/js/tab.js"></script>
+        <script type="text/javascript">
+          $('#trig').on('click', function () {
+          $('#col1').toggleClass('col-md-12 col-md-2');
+          $('#col2').toggleClass('span0 col-md-10');
+          });
+        </script>
         <!-- endbuild -->
 
        <!-- build:js scripts/main.js -->
