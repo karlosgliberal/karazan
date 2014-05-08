@@ -228,12 +228,18 @@
 <!-- Empieza ejemplo cut and paste -->
       <div class="container">
        <div class="row-fluid">
-        <div id="col2" class="span0"></div>
+        <div id="col2" class="span0">
+          <h1>Aqui texto en azul</h1>
+          <p>con un p en azul</p>
+          <p>y otro en azul</p>
+        </div>
          <div id="col1" class="col-md-12">
          <a id="trig" class="btn btn-inverse">Reflow Me</a>
+         <p>aqui texto en purle</p>
+         <p>aqui mas texto en purple</p>
         </div>
       </div>
-      </div>
+    </div>
 <!-- Fin ejemplo cut and paste  -->
 
 
@@ -277,8 +283,8 @@
         <script src="bower_components/bootstrap/js/tab.js"></script>
         <script type="text/javascript">
           $('#trig').on('click', function () {
-          $('#col1').toggleClass('col-md-12 col-md-2');
-          $('#col2').toggleClass('span0 col-md-10');
+            $('#col1').hide();
+            $('#col2').addClass('mover');
           });
         </script>
         <!-- endbuild -->
