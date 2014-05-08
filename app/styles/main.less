@@ -227,6 +227,7 @@ background-color: @white;
 	height: 6px;
 }
 
+
 .line {
 	width: 9%;
 	height: 6px;
@@ -242,6 +243,7 @@ background-color: @white;
 	background-color: @black;	
 	margin-left: 41%;
 }
+
 
 .slide-big {
 text-transform: uppercase;
@@ -367,46 +369,41 @@ padding-left: 0;
 	background-image: url("../images/textura.png");
 }
 
-// EJEMPLO
+// AITOR
 
-.row-fluid div {
-    // height: 400px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+//
+// Carousel
+// --------------------------------------------------
+
+.con-bestaker {
+  position: relative;
+}
+
+.concepto-inner {
+  // position: relative;
+  overflow: hidden;
+  // width: 100%;
+}
+
+
+ .con-bestaker-item {
+    position: absolute;
+    top: 5px; 
+    left: 4000px;
+ 	-webkit-transition: left 1s ease-in;
+    -moz-transition: left 1s ease-in;
+    -o-transition: left 1s ease-in;
+     transition: left 0.8s ease-in;
+}
+
+
+.con-bestaker-anima {
+	width: 100%;
+	left: 0px !important;
+	background-color: @white;
+	height: auto;
+
 }
 
 
 
-.row-fluid .span0 {
-    position: relative;
-    rigth: -1500px;
-}
-
-#col1 {
-    background-color: purple;
-}
-
-
-#col2 {
-    background-color: @blue;
-}
-
-#trig {
-    margin: 50px;
-}
-
-.row-fluid .span0 + [class*="span"]{
-    margin-left: 0;
-}
-
-// FIN EJEMPLO
-
-
-#myCarousel .nav a small {
-	display:block;
-}
-#myCarousel .nav {
-	background:#eee;
-}
