@@ -369,42 +369,53 @@ padding-left: 0;
 	background-image: url("../images/textura.png");
 }
 
-// AITOR
-
-//
-// Carousel
-// --------------------------------------------------
-
-.con-bestaker {
+.con-bestaker-inner {
   position: relative;
-}
-
-.concepto-inner {
-  // position: relative;
   overflow: hidden;
-  // width: 100%;
+  width: 100%;
 }
 
-
- .con-bestaker-item {
-    position: absolute;
-    top: 5px; 
-    left: 4000px;
- 	-webkit-transition: left 1s ease-in;
-    -moz-transition: left 1s ease-in;
-    -o-transition: left 1s ease-in;
-     transition: left 0.8s ease-in;
-}
-
-
-.con-bestaker-anima {
-	width: 100%;
-	left: 0px !important;
-	background-color: @white;
-	height: auto;
+.con-bestaker-item {
+	background-color: #fff;
 	z-index: 1;
-
 }
+
+ .con-bestaker-inner .item {
+    	display: none;
+    	position: relative;
+   	 .transition(.6s ease-in-out left);
+	}
+
+.con-bestaker-inner .active,
+.con-bestaker-inner .next { display: block; }
+
+ .con-bestaker-inner .active {
+    left: 0;
+  }
+
+.con-bestaker-inner .next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+   
+.con-bestaker-inner .next {
+    left: 100%;
+  }
+
+.con-bestaker-inner .next.left {
+    left: 0;
+  }
+
+.con-bestaker-inner.active.left {
+    left: -100%;
+  }
+
+
+
+
+
+
 
 
 

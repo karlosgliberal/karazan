@@ -101,7 +101,7 @@
 </div>
   <!-- fin de titular -->
 
-<div class="con-bestaker">
+<div class="con-bestaker con-bestaker-inner">
   <div class="container">
    <!--   empieza imagen -->
     <div class="col-md-6 mt40">
@@ -143,7 +143,7 @@
     </div> 
      <!-- fin de item -->
   </div>
-   <div class="con-bestaker-item">
+   <div class="con-bestaker-item item">
     <div class="container">
       <div class="row">
         <div class="col-md-12 inner">
@@ -274,8 +274,11 @@
         <script type="text/javascript">
           $(document).ready(function(){
             $('#aparece').on('click', function(e){
-              $('.con-bestaker-item').show();
-              $('.con-bestaker-item').addClass("con-bestaker-anima");
+              console.log('movida');
+              $('.con-bestaker-item').addClass('next');
+              setTimeout(function(){
+                $('.con-bestaker-item').addClass('left');
+              }, 50);
             })
 
           });
