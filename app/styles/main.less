@@ -12,9 +12,12 @@
 @light_blue:#51A7DF;
 @black:#303231;
 @white:#fff;
+@white_dark: #e8e8e8;
 @gray:#d6d6d6;
 @gray_dark: #8f8f8f;
+@black_extra: #000;
 @green: #76b828;
+
 
 // Tipografías
 @open: "Open Sans", sans-serif;
@@ -404,7 +407,7 @@ font-size: 60px;
  .con-bestaker-inner .item {
     	display: none;
     	position: relative;
-   	    .transition(.6s ease-in-out left);
+   	  .transition(.6s ease-in-out left);
 }
 
 .con-bestaker-inner .active,
@@ -482,7 +485,7 @@ ul.items-inversor {
 	padding: 0 15px;
 }
 
-.para-inversor {
+.para-inversor, .novedades {
 	background-image: url("../images/textura.png");
 }
 
@@ -496,7 +499,7 @@ ul.items-inversor {
 }
 
 .para-emprendedor-title {
-	text-transform: uppercase;
+ text-transform: uppercase;
  font-weight: bold;
  font-size: 16px;
  color: @white;
@@ -505,10 +508,68 @@ ul.items-inversor {
 .para-emprendedor-texto {
  color: @white;
 }
+
 .btn-wrapper-emprendedor {
 	text-align: center;
 }
 
+.destacado-home {
+	background-image: url("../images/frases.jpg");
+}
 
+.texto-destacado-home {
+	font-size: 35px;
+}
 
+.sub-texto-destacado-home {
+font-size: 16px;
+text-transform: uppercase;
+}
 
+// Footer
+
+.footer-bestaker {
+	 background-color: @black;
+}
+
+.sub-footer {
+	background-color: @black_extra;
+	padding: 20px 15px;
+}
+
+.titular-footer {
+	font-family: @open_con;
+	border-bottom: 1px solid @gray_dark;
+	padding-bottom: 5px;
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: @white_dark;
+}
+
+.texto-footer-inner {
+	font-size: 13px;
+	color: @white_dark;
+}
+
+.icon-footer-phone {
+	background-color: @gray;
+	border-radius: 5px 5px;
+	width: 27px;
+	height: 27px;
+	color: @black;
+	padding: 2px 0px 2px 4px;
+	font-size: 19px;
+	float: left;
+	margin-right: 13px;
+}
+
+.phone-texto {
+	float: left; 
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.texto-footer {
+	color: #bfbfbf;
+	font-size: 13px;
+}
